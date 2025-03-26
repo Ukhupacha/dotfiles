@@ -5,13 +5,13 @@
   "modules-right": ["network", "pulseaudio", "battery", "clock"],
   "tray": {
     "icon-size": 18,
-    "spacing": 10,
+    "spacing": 10
   },
   "custom/hostname": {
     "format": "🖳  {}",
     "exec": "/usr/bin/hostname -f",
     "interval": "once",
-    "on-click": "/usr/bin/alacritty -e /usr/bin/htop",
+    "on-click": "/usr/bin/alacritty -e /usr/bin/htop"
     },
   "clock": {
     "format": "<span foreground='#f5c2e7'>   </span>{:%a %d %H:%M}",
@@ -37,7 +37,8 @@
     "format-ethernet": "<span size='13000' foreground='#f5e0dc'>󰤭  </span> Disconnected",
     "format-linked": "{ifname} (No IP) ",
     "format-disconnected": "<span size='13000' foreground='#f5e0dc'>  </span>Disconnected",
-    "tooltip-format-wifi": "Signal Strenght: {signalStrength}%"
+    "tooltip-format-wifi": "Signal Strenght: {signalStrength}%",
+    "format-alt": "{ifname}: {ipaddr}/{cidr}"
   },
   "pulseaudio": {
       "format": "{icon}  {volume}%",
